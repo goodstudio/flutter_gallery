@@ -272,10 +272,6 @@ void main([List<String> args = const <String>[]]) {
             scrollToTopWhenDone: false,
           );
         },
-        streams: const <TimelineStream>[
-          TimelineStream.dart,
-          TimelineStream.embedder,
-        ],
       );
 
       final summary = TimelineSummary.summarize(timeline);
@@ -316,10 +312,6 @@ void main([List<String> args = const <String>[]]) {
             scrollToTopWhenDone: false,
           );
         },
-        streams: const <TimelineStream>[
-          TimelineStream.dart,
-          TimelineStream.embedder,
-        ],
       );
 
       final summary = TimelineSummary.summarize(timeline);
@@ -334,10 +326,6 @@ void main([List<String> args = const <String>[]]) {
         () async {
           await runDemos(_profiledDemos, driver);
         },
-        streams: const <TimelineStream>[
-          TimelineStream.dart,
-          TimelineStream.embedder,
-        ],
       );
 
       final summary = TimelineSummary.summarize(timeline);
